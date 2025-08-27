@@ -1,0 +1,93 @@
+.home .box {
+    padding: 20px;
+    margin-bottom: 25px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.home .intro-boxes h5 {
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.home .intro-boxes ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.home .intro-boxes ul li {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+.home .intro-boxes ul li span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.home .intro-boxes ul.others li {
+    margin-bottom: 0;
+}
+
+.home .intro-boxes ul.others li a {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem 1.7rem;
+    font-size: 1.4rem;
+    color: var(--black);
+    background-color: var(--light-bg);
+    border-radius: 4px;
+}
+
+.home .intro-boxes li a svg {
+    margin-right: 4px;
+    color: var(--black);
+}
+
+.home .intro-boxes ul.others li a:hover,
+.home .intro-boxes ul.others li a:hover svg {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.home .our-courses {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.home .our-courses a.view-all {
+    padding: .8rem 1.7rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+.home .our-courses a.view-all:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    /* .home .our-courses .thumb-box {
+        max-height: 220px;
+        height: 240px;
+    } */
+
+    /* .teacher-profile .teacher-profile-bottom {
+        margin-bottom: 40px;
+    } */
+
+}

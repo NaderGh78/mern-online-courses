@@ -1,0 +1,13 @@
+.update-user .form-box {
+    width: 70%;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+    .update-user .form-box {
+        width: 92%;
+    }
+}

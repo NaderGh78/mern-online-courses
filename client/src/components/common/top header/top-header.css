@@ -1,0 +1,241 @@
+.top-header {
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 80px;
+    padding: 0 20px;
+    line-height: 80px;
+    background-color: var(--white);
+    border-bottom: var(--border);
+    z-index: 5;
+}
+
+.top-header-content ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-header-content ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-right: 10px;
+    font-size: 2rem;
+    color: var(--black);
+    background-color: var(--light-bg);
+    border-radius: 4px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.top-header-content ul li svg {
+    font-size: 1.5rem;
+}
+
+/* hidden-icon */
+.top-header-content ul li.hidden-icon {
+    display: none;
+}
+
+.top-header-content ul li:last-child {
+    margin-right: 0;
+}
+
+.top-header-content ul li:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.top-header-content ul li:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.top-header-content form {
+    position: relative;
+}
+
+.top-header-content form svg {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.top-header-content form svg:hover {
+    color: var(--main-color);
+}
+
+/* var(--light-bg) */
+.top-header-content form input {
+    height: 35px;
+    background: transparent !important;
+    border: 1px solid #999 !important;
+}
+
+/* style login popup */
+.top-header-content .login-popup {
+    position: absolute;
+    top: 150%;
+    right: 0;
+    width: 30rem;
+    padding: 1.3rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top right;
+    -webkit-animation: scaleAnimation2 0.2s linear alternate both;
+    animation: scaleAnimation2 0.2s linear alternate both;
+}
+
+.top-header-content .active-popup {
+    -webkit-animation: scaleAnimation 0.2s linear alternate both;
+    animation: scaleAnimation 0.2s linear alternate both;
+}
+
+.top-header-content .inactive-popup {
+    -webkit-animation: scaleAnimation2 0.2s linear alternate both;
+    animation: scaleAnimation2 0.2s linear alternate both;
+}
+
+@-webkit-keyframes scaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes scaleAnimation2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes scaleAnimation2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.top-header-content .custom-link {
+    margin-top: 0 !important;
+}
+
+.top-header-content .active-popup .profile,
+.top-header-content .inactive-popup .profile {
+    text-align: center;
+    line-height: normal;
+}
+
+.top-header-content .active-popup .profile img,
+.top-header-content .inactive-popup .profile img {
+    width: 8rem;
+    height: 8rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top-header-content .login-popup .btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    line-height: normal;
+}
+
+.top-header-content .login-popup a {
+    flex: 1;
+    padding: .5rem 1.7rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.top-header-content .login-popup a.first-btn {
+    flex: 1;
+    background-color: var(--main-color) !important;
+}
+
+.top-header-content .login-popup a:hover,
+.top-header-content .login-popup a.first-btn:hover {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+}
+
+/*-----------------------------------------------------------------*/
+/* style the form on small devices
+/*-----------------------------------------------------------------*/
+
+.top-header-content form.hidden-form {
+    position: absolute;
+    width: 100%;
+    /* top: calc(100% + 1px); */
+    top: 100%;
+    left: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .2s linear;
+}
+
+.top-header-content form.hidden-form input {
+    height: 5rem;
+    background-color: var(--white) !important;
+    border: none !important;
+    border-bottom: var(--border) !important;
+    border-radius: 0;
+}
+
+.top-header-content form.hidden-form svg {
+    top: 13px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:768px) {
+
+    .top-header-content form:not(.hidden-form) {
+        display: none;
+    }
+
+    .top-header-content form.show-form {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+    }
+
+    .top-header-content ul li.hidden-icon {
+        display: flex;
+    }
+
+}

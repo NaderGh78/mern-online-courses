@@ -1,0 +1,93 @@
+  .teacher-dashboard ul {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      overflow-y: auto;
+  }
+
+  .teacher-dashboard ul li {
+      width: calc(100% - 1.5rem / 4);
+      text-align: center;
+      border: 1px solid var(--light-color);
+  }
+
+  .teacher-dashboard ul li a {
+      display: inline-block;
+      padding: .5rem 1rem;
+      width: 100%;
+      font-size: 1.2rem;
+      color: var(--black);
+      white-space: nowrap;
+  }
+
+  .teacher-dashboard ul li.active {
+      background-color: var(--orange);
+      color: #fff !important;
+  }
+
+  .teacher-dashboard select,
+  .teacher-dashboard label {
+      font-size: 1.3rem;
+      color: var(--light-color);
+  }
+
+  .teacher-dashboard select {
+      background-color: var(--light-bg) !important;
+  }
+
+  textarea.my-textarea {
+      /* font-size: 1.7rem !important; */
+      color: var(--black) !important;
+  }
+
+  textarea.my-textarea:focus {
+      background-color: var(--light-bg) !important;
+      box-shadow: none;
+  }
+
+  /* custom table */
+  a.my-table-link {
+      display: inline-block;
+      padding: .5rem 1.7rem;
+      margin: 1rem 0;
+      font-size: 1.3rem;
+      background-color: var(--orange);
+      color: #fff;
+      border-radius: 4px;
+  }
+
+  table.my-table {
+      margin-bottom: 70px;
+      font-size: 1.2rem;
+      overflow-y: auto;
+  }
+
+  table.my-table th,
+  table.my-table td {
+      color: var(--black);
+      background-color: var(--white);
+      vertical-align: middle;
+      /* white-space: nowrap; */
+  }
+
+  table.my-table svg {
+      margin-right: .5rem;
+      font-size: 1.8rem;
+  }
+
+  table.my-table img {
+      width: 70px;
+  }
+
+  /*====================================*/
+  /*===========Responsive===============*/
+  /*====================================*/
+
+  @media only screen and (max-width:786px) {
+
+      table.my-table th,
+      table.my-table td {
+          white-space: nowrap;
+      }
+
+  }

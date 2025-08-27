@@ -1,0 +1,88 @@
+.course-card {
+    padding: 1.5rem;
+    margin-bottom: 13px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.course-card .user-avatar-details .left img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.course-card .card .master-img-box {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-color: var(--white);
+}
+
+.course-card .card .master-img-box span {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    padding: .2rem 1.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 25px;
+}
+
+.course-card .card .master-img-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.course-card .card .card-body {
+    padding-bottom: 0;
+    background-color: var(--white) !important;
+}
+
+.course-card .card {
+    border-color: var(--white) !important;
+}
+
+.course-card .card h5 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.course-card .card .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-card .card .avatar .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.course-card .card .avatar .left img {
+    width: 4rem;
+    height: 4rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.course-card .card .avatar .left h5 {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.course-card .card .avatar .left span {
+    font-size: 1.2rem;
+    color: var(--light-color);
+    font-style: italic;
+    text-transform: capitalize;
+}

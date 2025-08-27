@@ -1,0 +1,69 @@
+.contact .contact-from {
+    margin-top: 40px;
+}
+
+.contact .contact-from .thumb {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.contact .contact-from .thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.contact .contact-from .form-box {
+    margin: 0 0 0 auto;
+}
+
+.contact .contact-details {
+    margin: 40px 0 60px;
+}
+
+.contact .contact-details .row>div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 170px;
+    margin-bottom: 20px;
+    background-color: var(--white);
+}
+
+.contact .contact-details .row>div div a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.contact .contact-details .row>div div a:hover {
+    text-decoration: underline !important;
+}
+
+.contact .contact-details .row>div div h5 {
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.contact .contact-details .row>div div p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:1025px) {
+
+    .contact .contact-from .form-box {
+        width: 100% !important;
+    }
+
+}

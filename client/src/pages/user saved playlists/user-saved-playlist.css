@@ -1,0 +1,9 @@
+.user-saved-playlist span.unsaved {
+    position: absolute;
+    top: 2.3rem;
+    right: 3.5rem;
+    font-size: 2.2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2;
+}

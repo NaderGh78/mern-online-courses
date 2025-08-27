@@ -1,0 +1,240 @@
+.watching-video .main-video {
+    padding: 2rem;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.watching-video .main-video>div:first-child {
+    position: relative;
+    width: 100%;
+    height: 45rem;
+    margin-bottom: 1.5rem;
+}
+
+.watching-video .main-video>div:first-child>div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.watching-video .main-video iframe {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 100% !important;
+    border-radius: 7px;
+}
+
+.watching-video .main-video ul {
+    display: flex;
+    gap: 20px;
+}
+
+.watching-video .video-info ul {
+    padding: 1.5rem 0 !important;
+    border-bottom: var(--border);
+}
+
+.watching-video .video-info ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+.watching-video .video-info ul li span {
+    line-height: 0;
+}
+
+.watching-video .video-info ul li svg {
+    margin-right: .8rem;
+    color: var(--main-color);
+}
+
+.watching-video .video-details .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.watching-video .video-details .middle a.custom-link {
+    width: auto;
+    margin-top: 0;
+}
+
+.watching-video .video-details .middle span {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: .7rem 1.8rem;
+    font-size: 1.5rem;
+    background-color: var(--light-bg);
+    color: var(--light-color);
+    border-radius: 4px;
+    transition: all .2s;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.watching-video .video-details .middle span:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.watching-video .video-details .middle span.like-it {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.watching-video .video-details p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+/* style comment style */
+.watching-video .add-comment {
+    margin: 1.2rem 0 1.2rem;
+}
+
+.watching-video .add-comment .comment-box-from {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.watching-video .add-comment .comment-box-from label {
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.watching-video .add-comment .comment-box-from textarea {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    background-color: var(--light-bg);
+    border: var(--border);
+}
+
+.watching-video .add-comment .comment-box-from textarea::-webkit-input-placeholder {
+    color: var(--light-color);
+}
+
+.watching-video .add-comment .comment-box-from textarea::-moz-placeholder {
+    color: var(--light-color);
+}
+
+.watching-video .add-comment .comment-box-from textarea:-ms-input-placeholder {
+    color: var(--light-color);
+}
+
+.watching-video .add-comment .comment-box-from textarea::-ms-input-placeholder {
+    color: var(--light-color);
+}
+
+.watching-video .add-comment .comment-box-from textarea::placeholder {
+    color: var(--light-color);
+}
+
+.watching-video .all-video-comments .all-comments {
+    padding: 2rem;
+    margin: 2rem 0 10rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.watching-video .all-video-comments .single-comment-box {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border: var(--border);
+}
+
+.watching-video .all-video-comments .single-comment-box img {
+    width: 5rem;
+    height: 5rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.watching-video .all-video-comments .single-comment {
+    display: flex;
+}
+
+.watching-video .all-video-comments .single-comment>div {
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.watching-video .all-video-comments .single-comment>div h5 {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.watching-video .all-video-comments .single-comment>div h5 span {
+    margin-left: .7rem;
+    font-size: 1.2rem;
+    color: var(--light-color);
+}
+
+.watching-video .all-video-comments .single-comment>div p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.watching-video .all-video-comments .single-comment ul {
+    display: flex;
+    gap: 7px;
+}
+
+.watching-video .all-video-comments .single-comment ul svg {
+    font-size: 2rem;
+    transition: all .2s;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.watching-video .all-video-comments .single-comment ul li:first-child svg:hover {
+    color: green;
+}
+
+.watching-video .all-video-comments .single-comment ul li:last-child svg:hover {
+    color: red;
+}
+
+.watching-video .all-video-comments .single-comment .btn-box {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.watching-video .all-video-comments .single-comment .btn-box button {
+    padding: .3rem 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    .watching-video .main-video>div:first-child {
+        height: 25rem !important;
+    }
+
+}

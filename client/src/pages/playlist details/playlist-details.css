@@ -1,0 +1,121 @@
+.playlist-details .playlist-details-box {
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: var(--white);
+}
+
+.playlist-details .playlist-details-box button.saved {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.playlist-details .playlist-details-box .disabled {
+    cursor: not-allowed !important;
+}
+
+.playlist-details .playlist-details-box button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--light-color);
+    background-color: var(--light-bg);
+    border: none;
+    border-radius: 4px;
+    transition: all .2s;
+}
+
+.playlist-details .playlist-details-box button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.playlist-details .playlist-details-box .thumb-box {
+    width: 100%;
+    height: 30rem;
+}
+
+.playlist-details .user-avatar-details .left img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.playlist-details .playlist-videos {
+    margin-bottom: 80px;
+}
+
+.playlist-details .playlist-videos .video-card {
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: var(--white);
+}
+
+.playlist-details .video-card .thumb {
+    position: relative;
+    max-width: 100%;
+    height: 20rem;
+}
+
+.playlist-details .video-card .thumb img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.playlist-details .video-card .thumb .overlay-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    transition: all .2s;
+    opacity: 0;
+}
+
+.playlist-details .video-card:hover .overlay-thumb {
+    opacity: 1;
+}
+
+.playlist-details .playlist-videos .video-card h6 {
+    margin: 15px 0 0;
+    font-size: 19px;
+    color: var(--black);
+    transition: all .2s;
+}
+
+.playlist-details .playlist-videos .video-card h6:hover {
+    color: var(--main-color);
+}
+
+.playlist-details span.cat {
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    border: 2px dotted var(--main-color);
+    border-radius: 25px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    .playlist-details .playlist-details-box .thumb-box {
+        height: 22rem;
+    }
+}

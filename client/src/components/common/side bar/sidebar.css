@@ -1,0 +1,195 @@
+.side-bar {
+    position: fixed;
+    width: 22%;
+    height: 100vh;
+    background-color: var(--white);
+    border-right: var(--border);
+}
+
+.side-bar.full {
+    margin-left: -22%;
+}
+
+/* .side-bar-mini ul li */
+
+.side-bar .side-bar-profile,
+.side-bar-mini .side-bar-profile {
+    padding: 0 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    height: 22rem;
+}
+
+.side-bar .side-bar-profile>div:not(.link-box),
+.side-bar-mini .side-bar-profile>div:not(.link-box) {
+    width: 10rem;
+    height: 10rem;
+    padding: 2px;
+    margin: 50px auto 10px;
+    border-radius: 50%;
+    border: 2px solid var(--light-bg);
+}
+
+.side-bar .side-bar-profile>div img,
+.side-bar-mini .side-bar-profile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.side-bar .side-bar-profile .link-box,
+.side-bar-mini .side-bar-profile .link-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.side-bar .side-bar-profile .link-box a,
+.side-bar-mini .side-bar-profile .link-box a {
+    padding: .7rem;
+    margin-top: 0;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.side-bar .side-bar-profile .link-box a:first-child,
+.side-bar-mini .side-bar-profile .link-box a:first-child {
+    width: 60%;
+}
+
+.side-bar .side-bar-profile .link-box a:last-child,
+.side-bar-mini .side-bar-profile .link-box a:last-child {
+    width: 35%;
+    background-color: var(--orange);
+}
+
+.side-bar .no-user,
+.side-bar-mini .no-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 25rem;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+}
+
+.side-bar .no-user h3,
+.side-bar-mini .no-user h3 {
+    color: var(--black);
+}
+
+.side-bar .no-user .link-flex,
+.side-bar-mini .no-user .link-flex {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.side-bar .no-user .link-flex a,
+.side-bar-mini .no-user .link-flex a {
+    width: 50%;
+    padding: .5rem 1.7rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.side-bar ul li,
+.side-bar-mini ul li {
+    margin-bottom: 5px;
+}
+
+.side-bar ul li a,
+.side-bar-mini ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.side-bar ul li a.log-out,
+.side-bar-mini ul li a.log-out {
+    padding: .7rem 3rem;
+    font-size: 1.5rem;
+}
+
+.side-bar ul li a.active,
+.side-bar-mini ul li a.active {
+    background-color: var(--light-bg);
+}
+
+.side-bar ul li a svg,
+.side-bar-mini ul li a svg {
+    font-size: inherit;
+    color: var(--main-color);
+    transition: all .3s;
+}
+
+.side-bar ul li a:hover svg,
+.side-bar-mini ul li a:hover svg {
+    margin-right: 5px;
+}
+
+.side-bar ul li.last-li,
+.side-bar-mini ul li.last-li {
+    padding: 0 2rem;
+}
+
+.side-bar ul li.last-li a,
+.side-bar-mini ul li.last-li a {
+    justify-content: center;
+    padding: .7rem 3rem;
+    color: #fff;
+}
+
+/*-----------------------------------------------------------------*/
+/* style side bar on small devices
+/*-----------------------------------------------------------------*/
+
+.side-bar-mini {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    margin-left: -300px;
+    background-color: var(--white);
+    border-right: var(--border);
+    z-index: 10;
+}
+
+.side-bar-mini span.close-side-bar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:1200px) {
+
+    /* hide the main side bar when the screen less than 1200px */
+    .side-bar {
+        display: none;
+    }
+
+    /* show the sidebar mini by adding this class */
+    .show-mini-sidebar {
+        margin-left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, .5);
+    }
+
+}

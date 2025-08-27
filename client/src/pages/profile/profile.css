@@ -1,0 +1,69 @@
+.profile .profile-user-box {
+    padding: 20px 20px 0;
+    margin-bottom: 80px;
+    background-color: var(--white);
+    border-radius: 7px;
+}
+
+.profile .profile-user-box img {
+    width: 10rem;
+    height: 10rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--light-bg);
+}
+
+.profile .profile-user-box h5 {
+    margin: 15px 0 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.profile .profile-user-box a.custom-link {
+    width: auto;
+}
+
+.profile .profile-user-box .profile-user-info {
+    margin-top: 40px;
+}
+
+.profile .profile-user-box .profile-user-info .row>div>div {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+}
+
+.profile .profile-user-box .profile-user-info .row>div>div .icon {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.profile .profile-user-box .profile-user-info .row>div>div .icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 4px;
+}
+
+.profile .profile-user-box .profile-user-info .row>div>div .icon h6 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.profile .profile-user-box .profile-user-info .row>div>div .icon p {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    white-space: nowrap;
+}

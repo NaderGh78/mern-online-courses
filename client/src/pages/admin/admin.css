@@ -1,0 +1,113 @@
+.admin ul.admin-ul {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    overflow-y: auto;
+}
+
+.admin ul.admin-ul li {
+    width: calc(100% - 2.5rem /6);
+    text-align: center;
+    border: 1px solid var(--light-color);
+}
+
+.admin ul.admin-ul li a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+.admin a.active {
+    background-color: var(--orange);
+    color: #fff !important;
+}
+
+.admin .view-details {
+    padding-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.admin .view-details .row>div {
+    margin-bottom: 1.2rem;
+}
+
+.admin .view-details .playlist-view-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin .view-details h3,
+.admin .view-details h4,
+.admin .view-details ul {
+    color: var(--black);
+}
+
+.admin .view-details .card-body {
+    background-color: var(--white);
+}
+
+.admin .view-details .card-body {
+    color: var(--black);
+}
+
+.admin .view-details .card-body h5 {
+    font-size: 1.8rem;
+}
+
+.admin .view-details .card-body p {
+    font-size: 1.5rem;
+}
+
+.admin .view-details .card-body span {
+    padding: .2rem 2rem;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    border: 1px solid var(--main-color);
+    border-radius: 25px;
+    white-space: nowrap;
+}
+
+.admin .view-details ul {
+    padding: 2rem !important;
+    background-color: var(--white);
+    border-radius: 4px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.admin .view-details ul li {
+    font-size: 1.4rem;
+}
+
+.admin .view-details ul li span {
+    margin-left: .3rem;
+    text-transform: capitalize;
+    color: var(--light-color);
+}
+
+.admin .view-details select {
+    font-size: 1.4rem;
+}
+
+.admin .view-details button {
+    border: none;
+}
+
+.admin .view-details a {
+    font-size: 1.3rem;
+    color: var(--orange);
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    .admin .view-details .row>div:nth-of-type(2) {
+        padding: 0 !important;
+    }
+
+}

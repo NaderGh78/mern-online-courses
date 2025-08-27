@@ -1,0 +1,36 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: calc(100% - 22%);
+    padding: 1.7rem 0;
+    margin-left: 22%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+    border-top: var(--border);
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    /* .footer {
+        font-size: 3.5vw;
+        padding: 10px 0;
+    } */
+
+}
+
+@media only screen and (max-width:1200px) {
+
+    .footer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}

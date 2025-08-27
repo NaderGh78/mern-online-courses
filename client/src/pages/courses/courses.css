@@ -1,0 +1,15 @@
+.all-courses-page {
+    padding-bottom: 70px
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width:576px) {
+
+    .courses-box {
+        margin-bottom: 40px;
+    }
+
+}

@@ -1,0 +1,92 @@
+.about .about-top h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about .about-top p {
+    padding: 1rem 0;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.about .about-top a.custom-link {
+    margin-top: 0;
+    width: auto;
+}
+
+.about .about-middle {
+    margin-top: 2rem;
+}
+
+.about .about-middle .row>div>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1.2rem 2rem;
+    margin-top: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.about .about-middle .row>div>div svg {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+.about .about-middle .row>div>div h5 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.about .about-middle .row>div>div p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    white-space: nowrap;
+}
+
+.about .about-bottom {
+    margin: 3rem 0 8rem;
+}
+
+.about .about-bottom .students-box {
+    padding: 1.2rem 2rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.about .about-bottom .students-box p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: var(--light-color);
+}
+
+.about .about-bottom .student-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about .about-bottom .student-info img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.about .about-bottom .student-info h5 a {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.about .about-bottom .student-info ul {
+    display: flex;
+    gap: 5px;
+}
+
+.about .about-bottom svg {
+    font-size: 1.5rem;
+    color: var(--orange);
+}
