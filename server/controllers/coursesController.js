@@ -84,7 +84,7 @@ const createCourseCtrl = asyncHandler(
     // 6. Handle image upload (Cloudinary)
     let tutorialImage = {
       // url: `${process.env.BACKEND_URL}/uploads/no-picture.jpg`,
-      url: "https://backend-oeap.onrender.com/uploads/no-picture.jpg",
+      url: "https://backend-online-courses-szes.onrender.com/uploads/no-picture.jpg",
       publicId: null
     };
 

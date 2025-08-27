@@ -27,7 +27,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const corsOptions = {
     origin: [
         "http://localhost:3000", // local React   
-        "https://mern-online-courses.vercel.app" // production frontend
+        "https://frontend-seven-livid-85.vercel.app" // production frontend
     ],
     credentials: true
 };

@@ -46,7 +46,7 @@ const createPlaylistCtrl = asyncHandler(
 
         // Set default playlist image
         let playlistImage = { 
-            url: "https://backend-oeap.onrender.com/uploads/no-picture.jpg",
+            url: "https://backend-online-courses-szes.onrender.com/uploads/no-picture.jpg",
             publicId: null
         };
 
