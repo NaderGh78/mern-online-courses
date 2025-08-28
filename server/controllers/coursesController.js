@@ -75,7 +75,7 @@ const createCourseCtrl = asyncHandler(
       playlist: playlistId
     });
 
-    if (existingCourse) { 
+    if (existingCourse) {
 
       return res.status(400).json({ message: "Video title already exists!" });
 
